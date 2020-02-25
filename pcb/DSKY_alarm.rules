@@ -1,0 +1,134 @@
+
+(rules PCB DSKY_alarm
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1399)
+    (layer_rule Top
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule Bottom
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle Top 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-LAMP" "Via[0-3]_800:400_um" LAMP
+  )
+  (via 
+    "Via[0-3]_800:400_um-PWR" "Via[0-3]_800:400_um" PWR
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (via_rule
+    LAMP "Via[0-3]_800:400_um-LAMP"
+  )
+  (via_rule
+    PWR "Via[0-3]_800:400_um-PWR"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top In1.Cu In2.Cu Bottom)
+    )
+  )
+  (class "kicad_default"
+    3.3V /VOUT /D+ "/D-" /~RESET "Net-(IC3-Pad32)" "Net-(IC3-Pad31)" "Net-(C3-Pad1)"
+    "Net-(IC3-Pad13)" "/D2_A1_PA09_SCL_MISO" "/D0_A4_PA08_SDA" "Net-(PWR1-PadA)" "Net-(L1-PadA)" "LA8_PA27" "LA7_PA23" "LA6_PA22"
+    "LA5_PA19" "LA14_PA18" "LA13_PA17" "LA12_PA16" "LA11_PA15" "LA10_PA14" "LA9_PA11" "LA4_P05"
+    "LA3_PA04" "LA2_PA03" "LA1_PA02" "Net-(R11-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R4-Pad2)"
+    "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R9-Pad2)" "Net-(R10-Pad2)" "Net-(R12-Pad2)" "Net-(R13-Pad2)"
+    "Net-(R14-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top In1.Cu In2.Cu Bottom)
+    )
+  )
+  (class LAMP
+    "Net-(LA11-Pad1)" "Net-(LA21-Pad1)" "Net-(LA31-Pad1)" "Net-(LA41-Pad1)" "Net-(LA51-Pad1)" "Net-(LA81-Pad1)" "Net-(LA91-Pad1)" "Net-(LAA1-Pad1)"
+    "Net-(LAB1-Pad1)" "Net-(LAC1-Pad1)" "Net-(LAD1-Pad1)" "Net-(LAE1-Pad1)" "Net-(LA61-Pad1)" "Net-(LA71-Pad1)"
+    (clearance_class LAMP)
+    (via_rule LAMP)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top In1.Cu In2.Cu Bottom)
+    )
+  )
+  (class PWR
+    GND VBUS +5V
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 1041.4)
+    )
+    (circuit 
+      (use_layer Top In1.Cu In2.Cu Bottom)
+    )
+  )
+)

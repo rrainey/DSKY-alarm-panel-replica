@@ -1,0 +1,20 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AQY232SZ
+D Solid State SPST-NO (1 Form A) 4-SOP (0.173", 4.40mm)
+K MOSFET Output Photorelay 1-Form-A
+F https://www.digikey.com/product-detail/en/panasonic-electric-works/AQY232SZ/255-2690-1-ND/2125790
+$ENDCMP
+#
+$CMP Lamp_VCC_7265
+D 	LAMP INCANDESCENT RT-1 BI-PIN 5V
+K lamp
+F https://www.digikey.com/product-detail/en/visual-communications-company-vcc/7265/CM7265-ND/152079
+$ENDCMP
+#
+$CMP PJ-006B
+D CONN PWR JACK 2.5MM
+K PJ-006B
+$ENDCMP
+#
+#End Doc Library

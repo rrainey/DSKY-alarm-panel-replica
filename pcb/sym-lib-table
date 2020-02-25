@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Trinket_M0_rev_D-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Trinket_M0_rev_D-eagle-import.lib)(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Trinket M0 rev D")(type KiCad)(uri "$(KIPRJMOD)/Trinket M0 rev D.pretty")(options "")(descr ""))
+  (lib (name libraries)(type KiCad)(uri "C:/Users/riley/Documents/GitHub/DSKY_EL_replica/PCB - KiCad/DSKY_alarm/Trinket M0 rev D/libraries")(options "")(descr ""))
+)
