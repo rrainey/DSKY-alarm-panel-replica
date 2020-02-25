@@ -1,6 +1,8 @@
 # DSKY Alarm Indicator Panel Replica
 
-This is a scale a functional replica of the Alarm Indicator panel for the Apollo Guidance Computer. It is
+## This is a work-in-progress -- reuse at your own risk
+
+This is a scale functional replica of the Alarm Indicator panel for the Apollo Guidance Computer. It is
 designed to be part of a larger replica of the Display and Keyboard (DSKY) module of the AGC.
 
 ![See through view](images/see-thru-01.PNG "see through view")
