@@ -38,8 +38,7 @@ My name is Riley Rainey. I'm a software developer by profession. I spent a numbe
 
 ## Getting Support
 
-There's no official support available, but if you notice a problem or have a request for a specific drawing to be
-transcribed, [create an issue](https://github.com/rrainey/agc-mechanical-cad/issues) in this GitHub project.
+There's no official support available, but you can [leave comments or create an issue](https://github.com/rrainey/DSKY-alarm-panel-replica/issues) in this GitHub project.
 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)  
