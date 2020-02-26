@@ -15,6 +15,11 @@ This project is composed of these component subfolders:
 
 * hardware - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
 
+## Credits and Related Projects
+
+This project is inspired by work by Ben Krasnow creating a DSKY Electroluminescent Panel replica. You'll
+find information about that project in [this Applied Science video](https://www.youtube.com/watch?v=Z2o_Sp2-aBo) by Ben. Like Ben's E/L display, this project is driven by an AT SAMD21 microcontroller chip; the same chip is used in the multiple Adafruit microcontroller boards, including the Adafruit Trinket M0.
+
 ## DSKY Alarm Indicator Replica License
 
 Creative Commons Attribution/Share-Alike, all text above must be included in any redistribution. See license.txt for additional details.
@@ -26,3 +31,16 @@ This project includes hardware design elements from the Adafruit [Trinket M0 PCB
 The Trinket M0 was designed by Limor Fried/Ladyada for Adafruit Industries.
 
 Creative Commons Attribution/Share-Alike, all text above must be included in any redistribution. See license.txt for additional details.
+
+## My Background
+
+My name is Riley Rainey. I'm a software developer by profession. I spent a number of years building aerospace simulations as my day job.
+
+## Getting Support
+
+There's no official support available, but if you notice a problem or have a request for a specific drawing to be
+transcribed, [create an issue](https://github.com/rrainey/agc-mechanical-cad/issues) in this GitHub project.
+
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)  
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
