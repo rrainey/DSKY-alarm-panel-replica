@@ -15,6 +15,16 @@ This project is composed of these component subfolders:
 
 * hardware - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
 
+## Exploded View
+
+[This video](https://vimeo.com/393337269) will give you a sense of the internal construction of the unit. The panel
+is a combinaton of white and yellow indicators. Like the original, incendescent lamps are used for each alarm
+indicator. Yellow lens inserts are used where needed. An AT SAMD21 microcontroller drives the lamp from a 5V DC power
+source. This microcontroller include and I2C interface designed to be the source for external control of the unit.
+There's also a USB interface, however, that's more for programming than operational use.
+
+![Exploded view](images/exploded-view-01.PNG)
+
 ## Credits and Related Projects
 
 This project is inspired by work by Ben Krasnow creating a DSKY Electroluminescent Panel replica. You'll
