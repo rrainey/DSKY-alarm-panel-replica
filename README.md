@@ -19,15 +19,15 @@ This project is composed of these component subfolders:
 
 [This video](https://vimeo.com/393337269) will give you a sense of the internal construction of the unit. The panel
 is a combinaton of white and yellow indicators. Like the original, incendescent lamps are used for each alarm
-indicator. Yellow lens inserts are used where needed. An AT SAMD21 microcontroller drives the lamp from a 5V DC power
-source. This microcontroller include and I2C interface designed to be the source for external control of the unit.
+indicator. Yellow bezel inserts supply the indictor color where needed. An AT SAMD21 microcontroller drives the lamp from a 5V DC power
+source. This microcontroller includes an I2C interface designed to be the source for external control of the unit.
 There's also a USB interface, however, that's more for programming than operational use.
 
 ![Exploded view](images/exploded-view-01.PNG)
 
-At the top is a clear acrylic plate (0.060" thick). On that, I silkscreen lamp labels and the frame outline. Below that, there are 14 translucent covers, one for each indicator lamp array. Each indicator is composed of three incandescent lamps. Yellow indicators have yellow bezels to give them their color. The bezels and the translucent covers snap onto the main body of the component.  
+At the top is a clear acrylic plate (0.060" thick). On that, I silkscreen lamp labels and the frame outline. Below that, there are 14 translucent covers, one for each indicator lamp array. Each indicator is composed of three incandescent lamps. Yellow bezels are inserted where needed. The bezels and the translucent covers snap into the main body of the component.  
 
-A lamp and microcontroller PCB slides into a recess under the main body.  This PCB is held in place by a frame. The frame is secured with four screws. The main body and PCB frame are both designed to be 3D printed from Nylon, ABS, or PLA.
+A lamp and microcontroller PCB slides into a recess under the main body.  This PCB is held in place by a frame. The frame is secured with screws. The main body and PCB frame are both designed to be 3D printed from Nylon, ABS, or PLA.
 
 ## Painting
 
