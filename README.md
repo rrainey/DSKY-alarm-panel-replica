@@ -13,6 +13,8 @@ This project is composed of these component subfolders:
 
 * pcb - KiCad project for the controller PCB design
 
+* firmware - circuitpython board definition for this board and python-based firmware
+
 * hardware - 3D-printable frame components designed using Fusion 360. STEP and Fusion source files available. Hardware models used in thie replica were derived from models found in the [AGC Mechanical CAD project](https://github.com/rrainey/agc-mechanical-cad).
 
 ## Exploded View of the Assembly
