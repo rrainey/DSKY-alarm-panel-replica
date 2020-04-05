@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
+*.c linguist-detectable=false
+*.py linguist-detectable=true
+*.kicad_pcb linguist-detectable=true
+*.sch linguist-detectable=true
+*.psd linguist-detectable=true
+*.pdf linguist-detectable=false
 * text=auto
