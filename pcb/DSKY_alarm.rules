@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1399)
+    (start_pass_no 1156)
     (layer_rule Top
       (active on)
       (preferred_direction vertical)
@@ -93,12 +93,12 @@
     )
   )
   (class "kicad_default"
-    3.3V /VOUT /D+ "/D-" /~RESET "Net-(IC3-Pad32)" "Net-(IC3-Pad31)" "Net-(C3-Pad1)"
-    "Net-(IC3-Pad13)" "/D2_A1_PA09_SCL_MISO" "/D0_A4_PA08_SDA" "Net-(PWR1-PadA)" "Net-(L1-PadA)" "LA8_PA27" "LA7_PA23" "LA6_PA22"
-    "LA5_PA19" "LA14_PA18" "LA13_PA17" "LA12_PA16" "LA11_PA15" "LA10_PA14" "LA9_PA11" "LA4_P05"
-    "LA3_PA04" "LA2_PA03" "LA1_PA02" "Net-(R11-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R4-Pad2)"
-    "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R9-Pad2)" "Net-(R10-Pad2)" "Net-(R12-Pad2)" "Net-(R13-Pad2)"
-    "Net-(R14-Pad2)"
+    GND VBUS 3.3V /VOUT /D+ "/D-" /~RESET "Net-(IC3-Pad32)"
+    "Net-(IC3-Pad31)" "Net-(C3-Pad1)" "Net-(IC3-Pad13)" "/D2_A1_PA09_SCL_MISO" "/D0_A4_PA08_SDA" "Net-(PWR1-PadA)" "Net-(L1-PadA)" "LA8_PA27"
+    "LA7_PA23" "LA6_PA22" "LA5_PA19" "LA14_PA18" "LA13_PA17" "LA12_PA16" "LA11_PA15" "LA10_PA14"
+    "LA9_PA11" "LA4_P05" "LA3_PA04" "LA2_PA03" "LA1_PA02" "Net-(R11-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)"
+    "Net-(R3-Pad2)" "Net-(R4-Pad2)" "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R9-Pad2)" "Net-(R10-Pad2)"
+    "Net-(R12-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -121,7 +121,7 @@
     )
   )
   (class PWR
-    GND VBUS +5V
+    VBAT
     (clearance_class PWR)
     (via_rule PWR)
     (rule
