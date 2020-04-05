@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name Trinket_M0_rev_D-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Trinket_M0_rev_D-eagle-import.lib)(options "")(descr ""))
+  (lib (name MOLEX-USB)(type Legacy)(uri ${KIPRJMOD}/libraries/MOLEX-1051330001/105133-0001.lib)(options "")(descr ""))
+  (lib (name DSKY_alarm-rescue)(type Legacy)(uri ${KIPRJMOD}/DSKY_alarm-rescue.lib)(options "")(descr ""))
 )
