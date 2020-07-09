@@ -5,8 +5,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "DSKY Alarm Indicator Replica Driver"
-Date "2020-02-13"
-Rev "1"
+Date "2020-07-08"
+Rev "4"
 Comp ""
 Comment1 ""
 Comment2 ""
