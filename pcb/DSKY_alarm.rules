@@ -11,20 +11,8 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1156)
+    (start_pass_no 93)
     (layer_rule Top
-      (active on)
-      (preferred_direction vertical)
-      (preferred_direction_trace_costs 1.8)
-      (against_preferred_direction_trace_costs 3.6)
-    )
-    (layer_rule In1.Cu
-      (active on)
-      (preferred_direction horizontal)
-      (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.6)
-    )
-    (layer_rule In2.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
@@ -33,8 +21,8 @@
     (layer_rule Bottom
       (active on)
       (preferred_direction horizontal)
-      (preferred_direction_trace_costs 1.8)
-      (against_preferred_direction_trace_costs 2.4)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
     )
   )
   (rule
@@ -43,15 +31,9 @@
     (clear 125.0 (type smd_to_turn_gap))
     (clear 50.0 (type smd_smd))
   )
-  (padstack "Via[0-3]_800:400_um"
+  (padstack "Via[0-1]_800:400_um"
     (shape
       (circle Top 800.0 0.0 0.0)
-    )
-    (shape
-      (circle In1.Cu 800.0 0.0 0.0)
-    )
-    (shape
-      (circle In2.Cu 800.0 0.0 0.0)
     )
     (shape
       (circle Bottom 800.0 0.0 0.0)
@@ -59,28 +41,28 @@
     (attach off)
   )
   (via 
-    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
-    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-3]_800:400_um-LAMP" "Via[0-3]_800:400_um" LAMP
+    "Via[0-1]_800:400_um-LAMP" "Via[0-1]_800:400_um" LAMP
   )
   (via 
-    "Via[0-3]_800:400_um-PWR" "Via[0-3]_800:400_um" PWR
+    "Via[0-1]_800:400_um-PWR" "Via[0-1]_800:400_um" PWR
   )
   (via_rule
-    default "Via[0-3]_800:400_um"
+    default "Via[0-1]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (via_rule
-    LAMP "Via[0-3]_800:400_um-LAMP"
+    LAMP "Via[0-1]_800:400_um-LAMP"
   )
   (via_rule
-    PWR "Via[0-3]_800:400_um-PWR"
+    PWR "Via[0-1]_800:400_um-PWR"
   )
   (class default
     (clearance_class default)
@@ -89,23 +71,24 @@
       (width 250.0)
     )
     (circuit 
-      (use_layer Top In1.Cu In2.Cu Bottom)
+      (use_layer Top Bottom)
     )
   )
   (class "kicad_default"
-    GND VBUS 3.3V /VOUT /D+ "/D-" /~RESET "Net-(IC3-Pad32)"
-    "Net-(IC3-Pad31)" "Net-(C3-Pad1)" "Net-(IC3-Pad13)" "/D2_A1_PA09_SCL_MISO" "/D0_A4_PA08_SDA" "Net-(PWR1-PadA)" "Net-(L1-PadA)" "LA8_PA27"
-    "LA7_PA23" "LA6_PA22" "LA5_PA19" "LA14_PA18" "LA13_PA17" "LA12_PA16" "LA11_PA15" "LA10_PA14"
-    "LA9_PA11" "LA4_P05" "LA3_PA04" "LA2_PA03" "LA1_PA02" "Net-(R11-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)"
-    "Net-(R3-Pad2)" "Net-(R4-Pad2)" "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R9-Pad2)" "Net-(R10-Pad2)"
-    "Net-(R12-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)"
+    3.3V /VOUT /D+ "/D-" /~RESET "Net-(IC3-Pad32)" "Net-(IC3-Pad31)" "Net-(C3-Pad1)"
+    "Net-(IC3-Pad13)" "/D2_A1_PA09_SCL_MISO" "/D0_A4_PA08_SDA" "Net-(PWR1-PadA)" "Net-(L1-PadA)" "LA8_PA27" "LA7_PA23" "LA6_PA22"
+    "LA5_PA19" "LA14_PA18" "LA13_PA17" "LA12_PA16" "LA11_PA15" "LA10_PA14" "LA9_PA11" "LA4_P05"
+    "LA3_PA04" "LA2_PA03" "LA1_PA02" "Net-(R11-Pad2)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R4-Pad2)"
+    "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)" "Net-(R8-Pad2)" "Net-(R9-Pad2)" "Net-(R10-Pad2)" "Net-(R12-Pad2)" "Net-(R13-Pad2)"
+    "Net-(R14-Pad2)" "Net-(IC3-Pad27)" "/D3_A3_PA07_RXD_SCK" "/D4_A2_PA06_TXD_MOSI" "Net-(IC3-Pad2)" "Net-(IC3-Pad1)" "Net-(J1-Pad4)" "Net-(JP3-Pad5)"
+    "Net-(U15-Pad4)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
     )
     (circuit 
-      (use_layer Top In1.Cu In2.Cu Bottom)
+      (use_layer Top Bottom)
     )
   )
   (class LAMP
@@ -117,18 +100,18 @@
       (width 250.0)
     )
     (circuit 
-      (use_layer Top In1.Cu In2.Cu Bottom)
+      (use_layer Top Bottom)
     )
   )
   (class PWR
-    VBAT
+    GND VBUS +5V
     (clearance_class PWR)
     (via_rule PWR)
     (rule
-      (width 1041.4)
+      (width 250.0)
     )
     (circuit 
-      (use_layer Top In1.Cu In2.Cu Bottom)
+      (use_layer Top Bottom)
     )
   )
 )
