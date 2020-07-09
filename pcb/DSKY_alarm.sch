@@ -8,8 +8,8 @@ Title "DSKY Alarm Indicator Replica Driver"
 Date "2020-07-08"
 Rev "4"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "Design by Riley Rainey"
+Comment2 "Elements based on Adafruit Trinket M0"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -386,10 +386,10 @@ F 3 "" H 2100 5000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Trinket_M0_rev_D-eagle-import:TPB1,27 SWC1
+L Trinket_M0_rev_D-eagle-import:TPB1,27 SWC
 U 1 1 7F04099A
 P 6200 4900
-F 0 "SWC1" H 6150 4950 59  0000 L BNN
+F 0 "SWC" H 6150 4950 59  0000 L BNN
 F 1 "TPB1,27" H 6200 4900 50  0001 C CNN
 F 2 "Trinket M0 rev D:B1,27" H 6200 4900 50  0001 C CNN
 F 3 "" H 6200 4900 50  0001 C CNN
@@ -397,10 +397,10 @@ F 3 "" H 6200 4900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Trinket_M0_rev_D-eagle-import:TPB1,27 SWD1
+L Trinket_M0_rev_D-eagle-import:TPB1,27 SWD
 U 1 1 87123050
 P 6000 5100
-F 0 "SWD1" H 5950 5150 59  0000 L BNN
+F 0 "SWD" H 5950 5150 59  0000 L BNN
 F 1 "TPB1,27" H 6000 5100 50  0001 C CNN
 F 2 "Trinket M0 rev D:B1,27" H 6000 5100 50  0001 C CNN
 F 3 "" H 6000 5100 50  0001 C CNN
@@ -2331,4 +2331,11 @@ Wire Wire Line
 	2950 6550 2700 6550
 Wire Wire Line
 	2700 6550 2700 6500
+NoConn ~ 2950 6850
+Text Notes 3450 5400 0    50   ~ 0
+SDA, SCL for I2C interfacing
+Text Notes 3450 5300 0    50   ~ 0
++5V supply
+Text Notes 3450 5500 0    50   ~ 0
+GND\n
 $EndSCHEMATC
