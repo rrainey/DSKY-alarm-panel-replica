@@ -83,10 +83,12 @@ void receiveEvent(int count)
   while(Wire.available())
   {
     if (i++ < 2) {
-      command = (command << 8) || Wire.read();
+      command = (command << 8) | Wire.read();
     }
   }
-  updateLamps(command);
+  if (i == 2) {
+    updateLamps(command);
+  }
 }
 
 void setup() 
@@ -114,4 +116,5 @@ void setup()
 }
 
 void loop() {
+  delay(50);
 }
