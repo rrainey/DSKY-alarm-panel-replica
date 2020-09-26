@@ -1,6 +1,6 @@
 # DSKY Alarm Indicator Panel Replica
 
-## V2 boards have been tested; V3 board testing is in progress.
+## The current PCB layout has passed testing.
 
 This is a scale functional replica of the Alarm Indicator panel for the Apollo Guidance Computer. It is
 designed to be part of a larger replica of the Display and Keyboard (DSKY) module of the AGC.
